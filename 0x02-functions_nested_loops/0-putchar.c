@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
   * main - print _putchar
   * written by tim
@@ -7,16 +8,14 @@
 
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+	char spell[8] = "_putchar";
 
-return (0);
+	int i;
+
+	for (i = 0; i < 8; i++)
+		_putchar(spell[i]);
+	_putchar('\n');
+
+	return (0);
 
 }
