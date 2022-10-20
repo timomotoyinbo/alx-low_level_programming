@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * main - causes an infinite loop
+  * main - positve_or_negative_checker
   * Return: 0
   */
 
