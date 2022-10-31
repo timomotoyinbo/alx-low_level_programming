@@ -10,19 +10,20 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i;
-	int t1 = 0;
-	int tr = 0;
-	int s = size * size;
+	int diagonal_sum_1 = 0;
+	int diagonal_sum_2 = 0;
+	int row, i;
 
-	for (i = 0; i < s; i += size + 1)
+	for (row = 0; row < size; row++)
 	{
-		tl += a[i];
+		i = (row * size) + row;
+		diagonal_sum_1 += a[i];
 	}
 
-	for (i = size - 1; i < s - 1; i += size - 1)
+	for (row = 1; row <= size; row++)
 	{
-		tr += a[i];
+		i = (row * size) - row;
+		diagonal_sum_2 += a[i];
 	}
-	printf("%d, %d\n", tl, tr);
+	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
 }
