@@ -7,18 +7,17 @@
 *@s: pointer to memory area.
 *@b: constant to fill memory with.
 *@n: bytes of the memory area to be filled.
-*Return: pointer to memory area s.
+*Return: changed array with new value for n bytes
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-		unsigned int nomba;
+		int index;
 
-		while (nomba < n)
+		for (index = 0;  n > 0; index++)
 		{
-			s[nomba] = b;
-			nomba++;
+			s[index] = b;
+			n--;
 		}
-
 		return (s);
 }
