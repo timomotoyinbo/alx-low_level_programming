@@ -9,7 +9,7 @@ void create_word(char **, char *, int, int, int);
   * @str: string
   * Return: return a pointer to an array of strinngs
   */
-char **strtwo(char *str)
+char **strtow(char *str)
 {
 	int i, flag, len;
 	char **words;
